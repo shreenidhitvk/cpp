@@ -1,0 +1,89 @@
+******||Shree||******
+C++ Topis of Interest
+=====================
+
+*Application Programming*
+
+* No need to panic 
+* Its okay to fail 
+* Learning is the moto
+* Stick to topic and donot divert 
+
+
+References
+----------
+
+* Bogotobogo
+* Bo Quain
+* GeeksQuiz
+
+
+Main
+----
+
+* Memory Layout																[Done]
+* Global variable variations												[Done]
+* Callabck functions
+* Function pointers
+* Functors
+* Pointer arithmatics														[Ciatation needed]
+* Bitwise shift operations													[Done]
+
+
+Class
+-----
+
+* Difference Between Structure and Class									[Done]
+* Virtual Distructors 
+* Constructors 
+* Deep v/s Shallow Copy
+* Operator Overloading
+* Operator overriding
+* Function overloading
+* Const function 
+* Const data members
+* Static function 
+* Static data member
+* Virtual table
+* Virtual pointer
+* Compiler generated functions
+* geeks for geeks puzzles related to these topics
+* New , Delete , Free
+* Define new handler
+
+
+Inheritance
+-----------
+
+* Public , Private , Protected 
+* Diamond inheritence problem and how do you overcome it
+* Smart pointer design , auto_ptr , weak_ptr , uniq_ptr
+* this pointer
+* Polimorphism, why you need base class pointer?
+* Puzzles on inheritence
+* How do you define an interface in C++
+* Relationship between the classses in terms of object notation
+
+
+STL
+---
+
+* Vector
+* How is the vector implemented
+* Impliment your own vector
+* How is map implimented
+* How is list implemented 
+* Usage of Vecror , List , Map , HashMap
+
+
+Design Pattrens
+---------------
+
+* Singleton
+* Factory 
+* Abstract Factory
+* Adapror
+* Facade
+* Proxy
+* Command
+* Implement these and questions on these DP

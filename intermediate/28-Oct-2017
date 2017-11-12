@@ -1,0 +1,132 @@
+[Date : 28th October,2017]
+
+===========================================>>Memory Layout<<=================================================
+																	
+	- Memory layout comprised of different sections
+	- Text segment
+		- contains the instructions to be executed
+		- Shared and readonly area of the memory layout
+	- Data segment
+		- Divided into two parts 
+			- Initialized data segment (data)
+			- All initialized global variables sits here
+			- Uninitialized data segments (bss)
+			- bss is AKS Block started by symbols
+			- All initialized global variables sits here
+			- Kernel will initialize all the variables to arithmatic 0
+	- Stack segment
+		- local variables 
+		- pointers defined and referenced 
+		- auto cleaned off
+	- Heap
+		- All varaibles allcated throught the new , malloc goes here
+		- Has to be cleaned explicitely 
+		- Memory leaks if not done
+		
+	- String literals
+		- All initialized string variables goes here
+		
+==================================>>Global variable variations<<=============================================
+
+	- Static global variables
+	- Global static variables
+
+=========================================>>Storage classes<<=================================================
+
+* auto [Storage class ]
+	- It's a type of storage class in C
+	- By default all the local variables are auto
+	- variables defined inside the function/block are having the storage class specification as auto
+	- No need to explicitely specify as they are by default understood
+	- Even though you dont mention as auto the compiler will 
+
+* extern [Storage class]
+	- Extern is a keyword and it's one of the storage class specifier in c
+	- To understand extern one must understand the diff between defination and declaration
+		- Declaration is needed during the preprocessor and compilation time
+		- Declatation, remember the term "FORWARD DECLARATION"
+		- Declaration can be done any number of time 
+		- Declatation if not defined and not used is fine, runs throught Okay
+		- Declatation and no defination will runs not okay
+		- Defination means defining and allocating the memory 
+	- Declaration 
+		- Checking is done during the linking time
+		- int add(int lhs , int rhs);
+		- extern int variable;
+	- Defination 
+		- int variable;
+		- int add(int lhs , int rhs){
+			return lhs+rhs;
+		  }
+	- Defination is a superset of declaration 
+		- extern int variable=20;
+	- Extern is a keyword to acess the variable/function defined in the other translational unit
+	-  Or from the other object all together, throught the file incursion
+
+* static [Storage class]
+	- It's a type of storage class in C
+	- Its mainley used to retain the value of the auto variable between the function calls
+	- mainly visible with in the same translational unit
+	- all global variables can be considered as an example, i mean in similar functionality
+
+* register [Storage class]
+	- It's a type of storage class in C
+	- It's used to store the value in the register
+	- It's a request to the compiler, and no guarentee about the availability
+	- Used for the faster acess
+	- generally preferred for the small values
+
+* A note on why global variables are bad as we think 
+	- Global variables are open to be accessed by all functions
+	- Open access leads to modification to the variable in different function
+	- Its hard to figureout who has modified 
+	- Results in unnecessary waste of time in debugging 
+	- Its avoided in enterprice programming for this reason 
+
+===================================[ self defined coding standards ]===========================================
+
+Coding is solving a problem and it should be not be about solving what you are conveying!
+
+- Never Pollute the code
+- Be consistant in what you write
+- Dont rought it up even when you pendown on paper
+- Follow the lane below
+
+* Folder name
+	- all small letter no underscore						: main
+	
+* File name
+	-all small letter not eloborative
+		-Right												: right.h
+			-												: rightfilename.h
+			
+		-Wrong												: Wrong.h
+			-												: WrongFileName.h
+			-												: Wrong_file_name.h								
+
+* Class name
+	- Class name can be camel cased 						: MyClass
+	
+* Interface name
+	-Must start with I to denote it as an interface 		: IMyInterface
+
+* Function names
+	-Camelcase start with loweLetter 						: myFunction
+
+* Variable names
+	- Class/Member variables must start with m (lower case) : mMyVariable
+	- Pinter variables must start with p(lower case)		: pMypointer
+	- Global variables must start with  g (lowe case) 		: gMyGlobalVar
+
+
+* Macro names
+	- Don't use the "_" and "_ _" as they are reserved
+	- Wrong cases 											: __WRONG__
+		-													: _WRONG__
+		-													: _WRONG__STILL_
+		-													: _WRONG
+		-													: _WRONG_
+	-Right cases
+		-													: RIGHT_
+		-													: RIGHT_AGAIN_
+		-													: RIGHT_AGAIN_

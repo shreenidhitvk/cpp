@@ -1,0 +1,113 @@
+* A debate of c over c++
+	- By default all the strict members are public
+	- Which means no security anyone can acess/modify the things
+	- C++ Supports the features such as Abstraction, Polymorphism, Inheritence
+	
+	
+===============================================================================================================	
+* C++ Features
+	* Abstraction 
+	* Seperation 
+	* Encapsulation
+	* Polymorphism
+
+* Abstraction 
+	- Commonly defined as hiding the implementation details
+	- So what are we hiding here?
+	- This phase we will just collect the information needed (What function needed and what data members needed) 
+	- Exculde the implementation details about the data and the function 
+	- We can quote it as hiding the complexity of the implementation 
+
+* Seperation
+	- can be split into two parts 
+		- Interface
+			- Interface a function which provies the service
+			- Example printf 
+		- Implementation
+			- process of defining the function identified in the abstraction 
+		
+* Encapsulation 
+	- Process of implementing the seperation 
+	- Encapsulation is quoted as binding the data and the function 
+	- It is achieved through the struct or class in c++
+	
+	
+* Polymorphism 
+	- Poly:multi Morph: swift changes
+	- As the name itself suggest it will makes the smooth changes from one form to another form 
+	- Types of achievening phoymorphism
+	- Function overloading
+		- Also called as early binding or static binding 
+		- Function calls are resolved in the compile time 
+		- complier will resolve the function calls for us 
+	- Function Overriding 
+		- Also called as the late binging or runtime binding 
+		- Function calls are reslved in the runtime 
+		- It's achieved through the virtual pointers
+		
+A relation taken from the nature : water, water can take the forms of ice , steam and water 
+================================================================================================================
+* Inheritance types 
+	- Inheritance is from the below forms 
+	- single 
+	- multiple 
+	- multi leval inheritance (supported in C++ not in java or anyother languages)
+			
+* Singel inheritance
+	- Has a single hirarchy
+	
+	
+	
+	
+	
+	
+	
+	
+	
+===============================================================================================================
+* Pointer types 
+	- There are three main types of pointer
+	- Void pointer 
+		- A pointer is said to be a void pointer if its types is void*
+		- Void pointer can be type casted to any type
+		- Cannot dereference the void pointer as the data associated with the pointee is not known
+		- Cannot perform the pointer arithmatics
+	- Dangling pointer
+		- A pointer is said to be a dangling if its refering to invalid location 
+		- Or a local variable when goes out of the scope
+	- Wild pointer 
+		- A pointer is said to be a wild pointer if its declared and not initilized
+		- Which may refer to the any valid/invalid location 
+			- int* ptr;
+				
+	- Pointers are typically cleared using either the delete or free function calls
+		- Free takes the pointer the info about how much bites needs to be cleaned will be in before the first bit
+		- Same goes with the delete
+===============================================================================================================
+
+* Namespaces
+	- Namespace is a declaration region 
+	- Which is used to segregate the things
+	- Typically acessed with the keyword using along with the scope resolution operator
+	- Using is keyword a directive for the compiler
+		
+===============================================================================================================
+
+* Class
+	- A class is an keyword in c++
+	- class is made up of acess specifier to control the acessabality 
+	- class has this pointer hidden by the compiler which is of the class type 
+	
+	- this pointer [All about]
+		- this pointer is always available per object 
+		- this pointer points to the starting address of the invoking object 
+		- this pointer is implicitly provided by the c++ compiler
+		- this pointer is a constant pointer to the invoking object
+		- this pointer gets the memory in the stack frame of the function call
+		
+	- this pointer [uses]
+		- To return to the member function 
+		- concatinating the function call
+		- resolve the ambugity between calss datamebers
+	
+	

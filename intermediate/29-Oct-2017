@@ -1,0 +1,29 @@
+[Date : 28th October,2017]
+
+==============================>>Difference Between Structure and Class<<==================================
+- By default all the members of the class are private
+- By default all the members of the struct are public	
+- Two more needed from the Adi's reference 
+
+
+=================================>>Pointer arithmatics<<======================================================
+
+
+
+
+
+===================================>>Bitwise shift operations<<=================================================
+- The bit shift operations cannot be done on all the datatypes
+- Bit shift can only be done on int and char
+- Bit shift on float can be done by type casting
+- Bit shifts are of two types 
+- Right shift
+	- Operator for right shift is >>
+	 
+- Left shift
+	- Operator for right shift is >>
+  	- if you shift to the left here it goes
+  	- Suppose if you are shifting an Ai th Bit to the left by K shifts
+ 	- if the sum of Ai+k > N , where N is a total bit size in terms of 2pow
+  	- Zero is padded from the right
+================================================================================================================

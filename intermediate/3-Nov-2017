@@ -1,0 +1,15 @@
+* Constructor
+	- Needed to create the object 
+	- While passing the object as reference
+	- Returning the object by value
+	- Conversion constructor
+		- A constructor with only one value is called as conversion constructor
+		- A temporary object is created and assigned
+
+* Copy constructor
+	- Copy constructor is called object is returned by value
+	- Object is passed by values 
+	- Object is initilized from already existing object of the same type
+
+* Operator overloading
+	- Operators are overloaded when 
